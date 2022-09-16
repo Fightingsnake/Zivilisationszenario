@@ -18,5 +18,5 @@ class Ausgabe:
                 return 3
             elif wahl == 'q':
                 break
-            print("ziegenproblem es noch Mal.")
+            print("Versuch es noch Mal.")
 

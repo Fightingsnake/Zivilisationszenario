@@ -17,7 +17,7 @@ class Settings:
         self.startmonat = 10
 
         self.durchlaufzyklen = 10009
-        self.zwischenstaende = 12*30
+        self.zwischenstaende = 30
 
         # Personeneinstellungen
         self.schritte = 1   # Schritte im Alterungsprozess > IN TAGEN <

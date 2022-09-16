@@ -120,7 +120,6 @@ class Gesellschaft:
                         i += 1
                     p.ruhm -= 4
 
-
     def statistiken(self):
         print("Was möchtest du erfahren?\n"
               "( 1 ) Personenstatistik\n"
@@ -171,4 +170,3 @@ class Gesellschaft:
                   f"{kranke} Personen haben Krankheiten.\n"
                   f"{tot} Personen sind hier gestorben.")
             print("==========================================================================\n")
-

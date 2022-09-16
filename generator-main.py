@@ -23,7 +23,6 @@ class Generator:
     def kalender(self, kalender):
         self.__kalender = kalender
 
-
     def initialisieren(self):
         m = 0
         f = 0
@@ -42,7 +41,6 @@ class Generator:
                 print(self.kalender)
                 self.zwischenstaende()
 
-
             for p in self.gesellschaft.lebendePersonen:
                 if p.aktiv:
                     # ===== [ geburt ] =====
@@ -55,10 +53,9 @@ class Generator:
                                     c = 'W'
                                 p.geburt(self.gesellschaft.lebendePersonen, self.funktionen.vornamegenerieren(), c)
 
-
                     # ===== [ alltag Mensch ] =====
                     p.altern(self.settings.schritte)
-                    #p.sterben2()
+                    # p.sterben2()
                     if p.partnersuche():
                         self.gesellschaft.partnersuche(p)
                     if p.sterben():
@@ -89,8 +86,6 @@ class Generator:
             elif 10 <= self.kalender[1] <= 12:
                 self.settings.grippeFaktor *= 3
 
-
-
             self.kalenderup(1)
 
             i += 1
@@ -118,6 +113,7 @@ class Generator:
                 if self.kalender[1] >= 13:
                     self.kalender[1] -= 12
                     self.kalender[0] += 1
+
 
 gen = Generator()
 gen.run_generator()
